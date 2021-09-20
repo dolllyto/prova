@@ -1,2 +1,30 @@
-ewqewqewqe
-qewqewqe
+public class Antonio3 {
+
+
+		public static void main(String[] args) {
+			 java.util.Scanner teclado = new java.util.Scanner(System.in);
+			 
+			 int num,soma,resultado,resultadoo;
+			    soma = 0;
+			    resultado = 0;
+			    
+
+		     int counter = 1;
+	    	  System.out.println("coloque aqui 20 valores positivos ou negativos:");
+			    while (counter <=20 ) {
+			    	
+			
+			    	  
+			        num = teclado.nextInt();
+			        if (num < 0) {
+			         
+			         resultado++;
+			        }
+			        
+			        ++counter;
+			        soma += num;
+			    }
+			    resultadoo = 20 - resultado;
+			    System.out.println(""+resultado+" desses valores são negativos e "+resultadoo+" são positivos");
+			}
+		}
